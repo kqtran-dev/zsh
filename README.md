@@ -1,1 +1,1 @@
-$ stow -d ~/config -t ~ zsh
+stow -d ~/.config -t ~ zsh
