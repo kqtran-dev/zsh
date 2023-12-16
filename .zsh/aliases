@@ -3,4 +3,3 @@ if [[ $(uname) == "Darwin" ]]; then
 	alias vim='/opt/homebrew/bin/nvim'
 fi
 
-alias vim='/opt/homebrew/bin/nvim'
