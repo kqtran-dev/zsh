@@ -46,11 +46,12 @@ typeset -gU cdpath fpath mailpath path
 # cdpath=(
 #   $cdpath
 # )
+if [[ "$OSTYPE" == darwin* ]]; then
+	path += /opt/{homebrew,local}/{,s}bin(N)
 
 # Set the list of directories that Zsh searches for programs.
 path=(
   $HOME/{,s}bin(N)
-  /opt/{homebrew,local}/{,s}bin(N)
   /usr/local/{,s}bin(N)
   $path
 )
