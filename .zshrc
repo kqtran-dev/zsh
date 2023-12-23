@@ -24,7 +24,9 @@ precmd_vcs_info() { vcs_info }
 precmd_functions+=( precmd_vcs_info )
 setopt prompt_subst
 setopt rmstarsilent
+
 unsetopt correct_all
+unsetopt correct
 unsetopt pathdirs
 
 RPROMPT='${vcs_info_msg_0_}'
