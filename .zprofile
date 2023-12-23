@@ -16,12 +16,14 @@ fi
 #
 # Editors
 #
+export EDITOR='nvim'
+export VISUAL='nvim'
 
 if [[ -z "$EDITOR" ]]; then
-  export EDITOR='nano'
+  export EDITOR='nvim'
 fi
 if [[ -z "$VISUAL" ]]; then
-  export VISUAL='nano'
+  export VISUAL='nvim'
 fi
 if [[ -z "$PAGER" ]]; then
   export PAGER='less'
