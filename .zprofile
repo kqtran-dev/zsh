@@ -53,6 +53,7 @@ if [[ "$OSTYPE" == darwin* ]]; then
 fi
 # Set the list of directories that Zsh searches for programs.
 path=(
+  /opt/mssql-tools18/bin
   $HOME/{,s}bin(N)
   /usr/local/{,s}bin(N)
   $path

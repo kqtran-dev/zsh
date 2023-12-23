@@ -24,7 +24,7 @@ precmd_vcs_info() { vcs_info }
 precmd_functions+=( precmd_vcs_info )
 setopt prompt_subst
 setopt rmstarsilent
-
+setopt noglob # allows me to use -? args
 unsetopt correct_all
 unsetopt correct
 unsetopt pathdirs
