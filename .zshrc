@@ -25,6 +25,8 @@ precmd_functions+=( precmd_vcs_info )
 setopt prompt_subst
 setopt rmstarsilent
 unsetopt correct_all
+unsetopt pathdirs
+
 RPROMPT='${vcs_info_msg_0_}'
 # PROMPT='${vcs_info_msg_0_}%# '
 zstyle ':vcs_info:git:*' formats '%b'
