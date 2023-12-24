@@ -1,5 +1,0 @@
-alias mss=x3270 tcpip04.us.parker.corp
-if [[ $(uname) == "Darwin" ]]; then
-	alias vim='/opt/homebrew/bin/nvim'
-fi
-
