@@ -1,4 +1,4 @@
-alias config='/usr/bin/git --git-dir=/Users/k/.cfg/ --work-tree=/Users/k'
+alias mss=x3270 tcpip04.us.parker.corp
 if [[ $(uname) == "Darwin" ]]; then
 	alias vim='/opt/homebrew/bin/nvim'
 fi

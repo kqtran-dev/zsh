@@ -12,7 +12,7 @@
 if [[ -z "$BROWSER" && "$OSTYPE" == darwin* ]]; then
   export BROWSER='open'
 fi
-
+export LC_ALL=C
 #
 # Editors
 #
