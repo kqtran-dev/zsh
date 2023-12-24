@@ -2,7 +2,6 @@ zstyle ':zim:zmodule' use 'degit'
 
 ZIM_HOME=${ZDOTDIR}/.zim
 ZSH_COMPDUMP=${XDG_CACHE_HOME}/zsh/.zcompdump-$HOST
-compinit -d $ZSH_COMPDUMP
 # Download zimfw plugin manager if missing.
 if [[ ! -e ${ZIM_HOME}/zimfw.zsh ]]; then
   curl -fsSL --create-dirs -o ${ZIM_HOME}/zimfw.zsh \
@@ -23,4 +22,4 @@ fi
 # Initialize modules.
 source ${ZIM_HOME}/init.zsh
 
-alias vim=nvim
+source ${ZDOTDIR}/.aliases

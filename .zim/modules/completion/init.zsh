@@ -5,7 +5,7 @@
 [[ ${TERM} != dumb ]] && () {
   # Load and initialize the completion system
   local zdumpfile glob_case_sensitivity completion_case_sensitivity zstats zold_dat
-  zstyle -s ':zim:completion' dumpfile 'zdumpfile' || zdumpfile=${ZDOTDIR:-${HOME}}/.zcompdump
+  zstyle -s ':zim:completion' dumpfile 'zdumpfile' || zdumpfile=${XDG_CACHE_HOME}/zsh/.zcompdump
   zstyle -s ':zim:glob' case-sensitivity glob_case_sensitivity || glob_case_sensitivity=insensitive
   zstyle -s ':zim:completion' case-sensitivity completion_case_sensitivity || completion_case_sensitivity=insensitive
 

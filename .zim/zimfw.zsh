@@ -420,7 +420,7 @@ _zimfw_clean_compiled() {
 
 _zimfw_clean_dumpfile() {
   local zdumpfile zopt
-  zstyle -s ':zim:completion' dumpfile 'zdumpfile' || zdumpfile=${ZDOTDIR:-${HOME}}/.zcompdump
+  zstyle -s ':zim:completion' dumpfile 'zdumpfile' || zdumpfile=${XDG_CACHE_HOME}/zsh/.zcompdump
   if (( _zprintlevel > 0 )) zopt=-v
   command rm -f ${zopt} ${zdumpfile}(|.dat|.zwc(|.old))(N) && \
       _zimfw_print -R "Done with clean-dumpfile.${_zrestartmsg}"
