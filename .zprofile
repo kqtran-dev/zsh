@@ -20,3 +20,5 @@ fi
 
 # Ensure path arrays do not contain duplicates
 typeset -gU cdpath fpath mailpath path
+
+source ${ZDOTDIR}/.zshrc
