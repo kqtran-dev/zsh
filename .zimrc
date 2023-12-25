@@ -3,6 +3,7 @@ zmodule zsh-users/zsh-autosuggestions
 zmodule zsh-users/zsh-completions --fpath src
 
 # zmodule completion
+zmodule completion
 zmodule prompt
 zmodule prompt-pwd
 zmodule git-info
