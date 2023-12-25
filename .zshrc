@@ -19,7 +19,14 @@ if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZDOTDIR:-${HOME}}/.zimrc ]]; then
   source ${ZIM_HOME}/zimfw.zsh init -q
 fi
 
+#binds 
+bindkey "[D" backward-word
+bindkey "[C" forward-word
+bindkey "^[[1;3C" forward-word
+bindkey "^[[1;3D" backward-word
+
+bindkey "^[[1;5D" backward-word
+bindkey "^[[1;5C" forward-word
 # Initialize modules.
 source ${ZIM_HOME}/init.zsh
-
 source ${ZDOTDIR}/.aliases
