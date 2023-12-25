@@ -29,4 +29,5 @@ bindkey "^[[1;5D" backward-word
 bindkey "^[[1;5C" forward-word
 # Initialize modules.
 source ${ZIM_HOME}/init.zsh
+
 source ${ZDOTDIR}/.aliases

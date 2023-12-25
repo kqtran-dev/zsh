@@ -1,13 +1,14 @@
 alias vim='nvim'
 
-# ls colors
-alias ls='ls --color=auto -F'
-
-## Use a long listing format ##
-alias ll='ls -laF'
-
-## Show hidden files ##
-alias l.='ls --color=auto -d .*'
+if [[ "$OSTYPE" == darwin* ]]; then
+        alias l='/opt/homebrew/bin/gls --color=auto -h --group-directories-first -F'
+        alias ll='/opt/homebrew/bin/gls --color=auto -l --all --classify=auto --group-directories-first --time-style="+%Y-%m-%d    %H:%M" --no-group -og'
+        alias l.='/opt/homebrew/bin/gls --color=auto -d .* --classify=auto'
+    else 
+        alias l='ls --color -h --group-directories-first -F'
+        alias ll='ls --color=auto -l --all --classify=auto --group-directories-first --time-style="+%Y-%m-%d    %H:%M" --no-group -og'
+        alias l.='ls --color=auto -d .*'
+fi 
 
 # grep colors
 alias grep='grep --color=auto'
