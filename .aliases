@@ -1,7 +1,15 @@
 alias vim='nvim'
 
+# ls colors
+alias ls='ls --color=auto -F'
+
 ## Use a long listing format ##
-alias ll='ls --color=auto -la'
+alias ll='ls -laF'
 
 ## Show hidden files ##
 alias l.='ls --color=auto -d .*'
+
+# grep colors
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
