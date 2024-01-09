@@ -4,7 +4,9 @@ export path=(
     '/usr/sbin'
     '/sbin'
 )
-
+if [ ! -f /Users/k/Library/Python/3.9/bin/pip3 ]; then
+    path+='/Users/k/Library/Python/3.9/bin'
+fi 
 if [[ "$OSTYPE" == darwin* ]]; then
     path+='/opt/homebrew/bin'
 fi 
