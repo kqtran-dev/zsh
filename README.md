@@ -1,4 +1,4 @@
-git clone --recurse-submodules git@github.com:kqtran-dev/zsh.git
+`git clone --recurse-submodules git@github.com:kqtran-dev/zsh.git`
 
 Updated to use zimfw.
 `stow -d ~/.config -t ~ zsh`
