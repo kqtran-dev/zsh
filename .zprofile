@@ -1,26 +1,17 @@
 # default path
-export path=(
-    '/usr/bin'
-    '/bin'
-    '/usr/sbin'
-    '/sbin'
-)
-
+# export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
 # possible paths
-possible_paths=(
-    "${HOME}.local/bin"
+paths=(
+    "${HOME}/.local/bin"
     "$HOME/Library/Python/3.9"
     "/opt/homebrew/bin"
     "/snap/bin"
 )
 
-for path in "${paths[@]}"; do
-    if [ -d "$path" ]; then
-        # Check if the directory is not already in PATH
-        if [[ ":$PATH:" != *":$path:"* ]]; then
-            PATH="$path:$PATH"
+for p in "${paths[@]}"; do
+    if [ -d "$p" ]; then
+            export PATH="$p:$PATH"
         fi
-    fi
 done
 
 export LANGUAGE=en_US
