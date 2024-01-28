@@ -1,19 +1,29 @@
+# default path
 export path=(
     '/usr/bin'
     '/bin'
     '/usr/sbin'
     '/sbin'
 )
-if [ -d "${HOME}/.local/bin" ]; then
-    path+="${HOME}/.local/bin"
-fi 
-if [ ! -f "/Users/k/Library/Python/3.9/bin/pip3" ]; then
-    path+="/Users/k/Library/Python/3.9/bin"
-fi 
-if [[ "$OSTYPE" == darwin* ]]; then
-    path+="/opt/homebrew/bin"
-fi 
 
+# possible paths
+possible_paths=(
+    "${HOME}.local/bin"
+    "$HOME/Library/Python/3.9"
+    "/opt/homebrew/bin"
+    "/snap/bin"
+)
+
+for path in "${paths[@]}"; do
+    if [ -d "$path" ]; then
+        # Check if the directory is not already in PATH
+        if [[ ":$PATH:" != *":$path:"* ]]; then
+            PATH="$path:$PATH"
+        fi
+    fi
+done
+
+export LANGUAGE=en_US
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8 # changes for x3270
 # export LC_ALL=C # changes for x3270
