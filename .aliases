@@ -3,9 +3,9 @@
 alias vim='nvim'
 
 if [[ "$OSTYPE" == darwin* ]]; then
-        alias l='/opt/homebrew/bin/gls --color=auto -h --group-directories-first -F'
-        alias ll='/opt/homebrew/bin/gls --color=auto -l --all --classify=auto --group-directories-first --time-style="+%Y-%m-%d    %H:%M" --no-group -og'
-        alias l.='/opt/homebrew/bin/gls --color=auto -d .* --classify=auto'
+        alias l='/opt/homebrew/bin/lsd -h'
+        alias ll='/opt/homebrew/bin/lsd -l'
+        alias l.='/opt/homebrew/bin/lsd .*'
     else 
         alias l='ls --color -h --group-directories-first -F'
         alias ll='ls --color=auto -l --all --classify=auto --group-directories-first --time-style="+%Y-%m-%d    %H:%M" --no-group -og'

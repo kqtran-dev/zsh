@@ -32,6 +32,11 @@ bindkey "^[[1;5C" forward-word
 # python
 bindkey ";3D" backward-word
 bindkey ";5C" forward-word
+
 # Initialize modules.
 source ${ZIM_HOME}/init.zsh
 source ${ZDOTDIR}/.aliases
+
+eval "$(zoxide init zsh)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
