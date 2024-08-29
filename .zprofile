@@ -6,6 +6,8 @@ paths=(
     "$HOME/Library/Python/3.9"
     "/opt/homebrew/bin"
     "/snap/bin"
+    "/c/Windows/System32/"
+    "/c/Windows/System32/WindowsPowerShell/v1.0/"
 )
 
 for p in "${paths[@]}"; do
@@ -31,4 +33,6 @@ source ${ZDOTDIR}/.zshrc
 # Setting PATH for Python 3.12
 # The original version is saved in .zprofile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.12/bin:${PATH}"
+PATH="/c/Windows/System32/:${PATH}"
+PATH="/c/Windows/System32/WindowsPowerShell/v1.0:${PATH}"
 export PATH
