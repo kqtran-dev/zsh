@@ -39,4 +39,51 @@ source ${ZDOTDIR}/.aliases
 
 eval "$(zoxide init zsh)"
 
+printf '\eP$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "zsh" }}\x9c' 
+
+# Detect OS and set clipboard alias accordingly
+if grep -qEi "(Microsoft|WSL)" /proc/version &> /dev/null; then
+    # WSL: Use clip.exe for clipboard
+    alias copy="clip.exe"
+    alias paste="powershell.exe Get-Clipboard"
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+    # macOS: Use pbcopy and pbpaste for clipboard
+    alias copy="pbcopy"
+    alias paste="pbpaste"
+elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    # Linux: Use xclip for clipboard
+    alias copy="xclip -selection clipboard"
+    alias paste="xclip -selection clipboard -o"
+fi
+
+prompt_for_password() {
+    echo -n "Enter your Bitwarden master password: "
+    read -s BW_PASSWORD
+    echo    # Move to the next line after input
+}
+
+get_bw_session() {
+ if [[ -z "$BW_SESSION" ]]; then
+        # Prompt for the master password
+        prompt_for_password
+        echo "Unlocking Bitwarden..."
+        BW_SESSION=$(echo "$BW_PASSWORD" | bw unlock --raw)
+        unset BW_PASSWORD
+        export BW_SESSION="$BW_SESSION"
+    fi
+    # echo "$BW_SESSION"
+}
+bwcopy() {
+    # BW_SESSION=$(get_bw_session)
+    if [[ -z "$BW_SESSION" ]]; then
+        get_bw_session
+    fi 
+  if hash bw 2>/dev/null; then
+    bw get item "$(bw list items 2>/dev/null | jq '.[] | "\(.name) | username: \(.login.username) | id: \(.id)" ' | fzf-tmux | awk '{print $(NF -0)}' | sed 's/\"//g')" | jq '.login.password' | sed 's/\"//g' | copy
+  fi
+}
+export NODE_OPTIONS="--no-deprecation"
+
+source ${HOME}/.rc
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
