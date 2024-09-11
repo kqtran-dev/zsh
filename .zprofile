@@ -19,6 +19,7 @@ done
 export LANGUAGE=en_US
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8 # changes for x3270
+export LC_CTYPE=en_US.UTF-8
 # export LC_ALL=C # changes for x3270
 
 export EDITOR='nvim'
