@@ -3,7 +3,7 @@
 alias vim='nvim'
 
 if [[ "$OSTYPE" == darwin* ]]; then
-        alias l='/opt/homebrew/bin/lsd -h'
+        alias l='/opt/homebrew/bin/lsd -hl'
         alias ll='/opt/homebrew/bin/lsd -l'
         alias l.='/opt/homebrew/bin/lsd .*'
     else 
