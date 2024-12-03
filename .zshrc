@@ -84,6 +84,6 @@ bwcopy() {
 }
 export NODE_OPTIONS="--no-deprecation"
 
-source ${HOME}/.rc
+# source ${HOME}/.rc
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
