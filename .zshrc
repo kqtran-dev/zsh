@@ -1,4 +1,4 @@
-zmodload zsh/zprof
+# zmodload zsh/zprof
 zstyle ':zim:zmodule' use 'degit'
 
 ZIM_HOME=${ZDOTDIR}/.zim
@@ -194,12 +194,7 @@ bwc() {
 
 export NODE_OPTIONS="--no-deprecation"
 
-<<<<<<< HEAD
-# source ${HOME}/.rc
-=======
-
 source ${HOME}/.rc
->>>>>>> a544a8d (update to fix tmux)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-zprof
+# zprof
