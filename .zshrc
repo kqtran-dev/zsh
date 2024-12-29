@@ -1,3 +1,4 @@
+zmodload zsh/zprof
 zstyle ':zim:zmodule' use 'degit'
 
 ZIM_HOME=${ZDOTDIR}/.zim
@@ -39,7 +40,8 @@ source ${ZDOTDIR}/.aliases
 
 eval "$(zoxide init zsh)"
 
-printf '\eP$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "zsh" }}\x9c' 
+# printf '\eP$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "zsh" }}\x9c' 
+# commenting this out - causes tmux to hang 
 
 # Detect OS and set clipboard alias accordingly
 if grep -qEi "(Microsoft|WSL)" /proc/version &> /dev/null; then
@@ -71,19 +73,133 @@ get_bw_session() {
         unset BW_PASSWORD
         export BW_SESSION="$BW_SESSION"
     fi
-    # echo "$BW_SESSION"
 }
-bwcopy() {
-    # BW_SESSION=$(get_bw_session)
-    if [[ -z "$BW_SESSION" ]]; then
-        get_bw_session
-    fi 
+
+bwc() {
+  # Ensure a Bitwarden session is active
+  if [[ -z "$BW_SESSION" ]]; then
+    get_bw_session
+  fi 
+
   if hash bw 2>/dev/null; then
-    bw get item "$(bw list items 2>/dev/null | jq '.[] | "\(.name) | username: \(.login.username) | id: \(.id)" ' | fzf-tmux | awk '{print $(NF -0)}' | sed 's/\"//g')" | jq '.login.password' | sed 's/\"//g' | copy
+    # Check if the master password is valid by listing items
+    local filter="${1:-}"
+    local bw_output
+
+    if [[ -n "$filter" ]]; then
+      # Use the `--search` option if a filter is provided
+      bw_output=$(bw list items --search "$filter" 2>&1)
+    else
+      # Use the original command when no filter is provided
+      bw_output=$(bw list items 2>&1)
+    fi
+
+    # Check for invalid master password
+    if [[ "$bw_output" == *"Invalid master password."* ]]; then
+      echo "Error: Invalid master password. Exiting."
+      return 1
+    fi
+
+    # Check for empty output
+    if [[ "$bw_output" == "[]" ]]; then
+      echo "No matching items found. Exiting."
+      return 1
+    fi
+
+    # Select an item from the filtered output
+    local item_id=$(echo "$bw_output" |
+      jq -r '.[] | "\(.name) | username: \(.login.username // "N/A") | id: \(.id)"' |
+      fzf-tmux |
+      awk '{print $(NF -0)}' |
+      sed 's/\"//g')
+
+    # Exit if no item was selected
+    [[ -z "$item_id" ]] && return
+
+    # Fetch the full item details
+    local item=$(bw get item "$item_id" 2>/dev/null)
+
+    # Extract the password
+    local password=$(echo "$item" | jq -r '.login.password // empty')
+
+    # Copy the password to the clipboard
+    if [[ -n "$password" ]]; then
+      echo "$password" | copy
+      echo "Password copied to clipboard."
+    else
+      echo "No password found for this entry."
+    fi
+  else
+    echo "Bitwarden CLI (bw) not installed or not in PATH."
+    return 1
   fi
 }
+
+
+
+2fa() {
+  # Ensure a Bitwarden session is active
+  if [[ -z "$BW_SESSION" ]]; then
+    get_bw_session
+  fi 
+
+  if hash bw 2>/dev/null; then
+    # Check if the master password is valid by listing items
+    local filter="${1:-}"
+    local bw_output
+
+    if [[ -n "$filter" ]]; then
+      # Use the `--search` option if a filter is provided
+      bw_output=$(bw list items --search "$filter" 2>&1)
+    else
+      # Use the original command when no filter is provided
+      bw_output=$(bw list items 2>&1)
+    fi
+
+    # Check for invalid master password
+    if [[ "$bw_output" == *"Invalid master password."* ]]; then
+      echo "Error: Invalid master password. Exiting."
+      return 1
+    fi
+
+    # Check for empty output
+    if [[ "$bw_output" == "[]" ]]; then
+      echo "No matching items found. Exiting."
+      return 1
+    fi
+
+    # Select an item from the filtered output
+    local item_id=$(echo "$bw_output" |
+      jq -r '.[] | "\(.name) | username: \(.login.username // "N/A") | id: \(.id)"' |
+      fzf-tmux |
+      awk '{print $(NF -0)}' |
+      sed 's/\"//g')
+
+    # Exit if no item was selected
+    [[ -z "$item_id" ]] && return
+
+    # Fetch the TOTP and copy it to the clipboard
+    local totp=$(bw get totp "$item_id" 2>/dev/null)
+    if [[ -n "$totp" ]]; then
+      echo "$totp" | copy
+      echo "TOTP copied to clipboard."
+    else
+      echo "No TOTP found for this entry."
+    fi
+  else
+    echo "Bitwarden CLI (bw) not installed or not in PATH."
+    return 1
+  fi
+}
+
 export NODE_OPTIONS="--no-deprecation"
 
+<<<<<<< HEAD
 # source ${HOME}/.rc
+=======
+
+source ${HOME}/.rc
+>>>>>>> a544a8d (update to fix tmux)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+zprof
