@@ -194,6 +194,7 @@ bwc() {
 
 export NODE_OPTIONS="--no-deprecation"
 
+# removing this - what was this for?
 source ${HOME}/.rc
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
