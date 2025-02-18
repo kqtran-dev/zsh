@@ -192,6 +192,17 @@ bwc() {
   fi
 }
 
+function ztop() {
+    local git_root
+    git_root=$(git rev-parse --show-toplevel 2>/dev/null)
+
+    if [[ -n "$git_root" ]]; then
+        zoxide query "$git_root" && cd "$git_root"
+    else
+        echo "Not inside a Git repository." >&2
+    fi
+}
+
 export NODE_OPTIONS="--no-deprecation"
 
 # removing this - what was this for?

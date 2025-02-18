@@ -1,0 +1,1005 @@
+l
+;l
+l
+l
+l
+l
+/Users/k/source/reticle/reticle ; exit;
+/Users/k/source/reticle/reticle ; exit;
+/Users/k/source/reticle/reticle ; exit;
+z reticle
+pkill reticle
+./build.sh
+open reticle.app
+pkill reticle
+pkill reticle
+./build.sh
+./build.sh
+open reticle.app
+./build.sh
+pkill reticle
+open reticle.app
+pkill reticle
+./build.sh
+open reticle.app
+pkill reticle
+./build.sh
+open reticle.app
+pkill reticle
+./build.sh
+pkill reticle
+open reticle.app
+pkill reticle
+open reticle.app
+pkill reticle
+open reticle.app
+pkill reticle
+open reticle.app
+pkill reticle
+./build.sh
+./build.sh
+./build.sh
+./build.sh
+./build.sh
+./build.sh
+pkill reticle
+open reticle.app
+pkill reticle
+./build.sh
+open reticle
+open reticle.app
+./build.sh
+pkill reticle
+open reticle.app
+./build.sh
+pkill reticle
+open reticle
+./build.sh
+open reticle
+open reticle.app
+pkill reticle
+pkill reticle
+pkill reticle
+pkill reticle
+pkill reticle
+./build.sh
+open reticle.app
+pkill reticle
+./build.sh
+open reticle.app
+pkill reticle
+./build.sh
+open reticle.app
+pkill reticle
+gds
+cd ~/Library/Application\ Support/reticle
+l
+tail -f app.log
+tail -f app.log
+nvim config.json
+tail -f app.log
+cd ~/Library/LaunchAgents
+l
+ll
+nvim com.user.update.plist
+rm com.lwouis.alt-tab-macos.plist
+nvim com.user.update.plist
+l
+l ~/bin
+z reticle
+nvim Sources/AppDelegate.swift
+open -w reticle.app
+open -W reticle.app
+pkill reticle
+./build.sh
+open -f reticle
+open -f reticle.app
+pkill reticle.app
+g fetch
+./build.sh
+open reticle.app
+pkill reticle.app
+nvim app_config.json
+pkill reticle.app
+open reticle.app
+g status
+nvim Sources/AppDelegate.swift
+./build.sh
+pkill reticle.app
+./build.sh
+open reticle.app
+nvim Sources/AppDelegate.swift
+nvim ./build.sh
+./build.sh
+nvim Sources/AppDelegate.swift
+./build.sh
+nvim Sources/AppDelegate.swift
+nvim Sources/AppDelegate.swift
+./build.sh
+nvim Sources/AppDelegate.swift
+./build.sh
+nvim Sources/AppDelegate.swift
+./build.sh
+pkill reticle
+open reticle.app
+nvim Sources/AppDelegate.swift
+/Users/k/bin/update-sync-dotfiles.sh
+/Users/k/bin/update.sh ; exit;
+/Users/k/bin/update.sh ; exit;
+/Users/k/bin/update.sh ; exit;
+the quick brown fox jumped over the lazy dogs 
+~/bin/schedule-sync-dotfiles.sh
+tmux ls 
+tmux -a -t sync
+tmux -a sync
+cat ~/.ssh/config
+\:q!
+nvim
+z obsidian
+l
+nvim .obsidian.vimrc
+nvim .obsidian
+nvim .obsidian.vimrc
+ssh servarr
+ssh plex
+ssh plex-srv
+nvim ~/.ssh/config
+ssh plex
+exit
+z icloud sync
+l
+nvim sync.sh
+defaults write org.hammerspoon.Hammerspoon MJConfigFile "~/.config/hammerspoon/init.lua
+defaults write org.hammerspoon.Hammerspoon MJConfigFile "~/.config/hammerspoon/init.lua"
+z hammer
+z spoon
+l
+nvim Crosshair.lua
+cd ../
+l
+nvim init.lua
+z spoons
+l
+nvim Crosshair.lua
+rm Crosshair.lua
+z hammer
+l
+nvim init.lua
+g commit -a -m "tabsearcH"
+g push
+ssh nas03.tail153d7.ts.net
+gds
+z nvim
+l
+g status
+~/bin/schedule-sync-dotfiles.sh
+g stsatus
+g status
+l
+z lua
+l
+cd core
+l
+nvim set.lua
+g commit -a -m "add clipboard"
+g push
+nvim
+z core
+l
+nvim set.lua
+nvim
+nvim set.lua
+nvim set.lua
+nvim set.lua
+nvim set.lua
+nvim set.lua
+nvim set.lua
+nvim set.lua
+nvim set.lua
+nvim set.lua
+nvim set.lua
+nvim set.lua
+nvim set.lua
+nvim set.lua
+nvim set.lua
+brew install scroll-reverser
+~/bin/schedule-sync-dotfiles.sh
+g status
+ssh servarr
+~/bin/schedule-sync-dotfiles.sh
+ssh servarr
+/Users/k/bin/update-sync-dotfiles.sh
+z reticle
+open reticle.app
+pkill reticle
+z
+nvim
+brew install skim
+nvim
+~/bin/schedule-sync-dotfiles.sh
+/Users/k/bin/update-sync-dotfiles.sh
+/Users/k/bin/update-sync-dotfiles.sh
+/Users/k/bin/update-sync-dotfiles.sh
+/Users/k/bin/update-sync-dotfiles.sh
+nvim ~/.hammerspoon/Spoons/TabSearch.lua
+nvim ~/.hammerspoon/init.lua
+nvim ~/.hammerspoon/init.lua
+z config
+l
+git remote add origin git@github.com:kqtran-dev/hammerspoon.git\
+git branch -M main\
+git push -u origin main
+g clone git@github.com:kqtran-dev/hammerspoon.git
+cd hammerspoon
+l
+g status
+g status
+g add .
+g status
+cp ~/.hammerspoon/ ./ -rv
+cp -rv ~/.hammerspoon/ ./
+ls
+g commit -a -m "initial commit"
+g add .
+g commit -a -m "initial commit"
+rm -rf ~/.hammerspoon
+l
+cd spoons
+l
+nvim TabSearch.lua
+cd ../
+l
+nvim init.lua
+z nvim 
+z set
+l
+z nvim
+l
+cd lua
+l
+cd lua
+cd core
+l
+nvim set.lua
+nvim remap.lua
+cd ../
+l
+z plujgins
+z plugins
+l
+nvim telescope.lua
+z core
+nvim remap.lua
+g commit -a -m "telescope bindings"
+g push
+z hammerspoon
+l
+nvim
+z core
+nvim remap.lua
+nvim remap.lua
+nvim remap.lua
+nvim remap.lua
+z plugins
+l
+nvim telescope.lua
+nvim telescope.lua
+nvim telescope.lua
+nvim telescope.lua
+nvim telescope.lua
+g commit -a -m "telescope"
+g push
+z hammerspoon
+l
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+z spoons
+l
+nvim Tasb
+nvim TabSearch.lua 
+nvim TabSearch.lua
+g commit -a -m "hammerspoon"
+g push
+ifconfig
+l
+ifconfig | more
+ping 1.1.1.1
+ifconfig 
+ifconfig  | more
+ping 192.168.1.109
+ping 192.168.1.1
+ping 1.1.1.1
+ping 192.168.1.1 -t
+ping 192.168.1.1 
+ping 1.1.1.1 -t
+ping 1.1.1.1 
+ping 1.1.1.1
+gds
+brew update obsidian
+brew upgrade obsidian
+/Users/k/bin/update.sh ; exit;
+ ping 1.1.1.1
+defaults get
+defaults get com.apple.Firefox
+defaults get com
+defaults list
+defaults
+mas install alfred
+brew install alfred
+/Applications/ghostty.app
+open /Applications/Ghostty.app
+z obsidian
+l
+nvim .obsidian
+nvim .obsidian.vimrc
+z reticle
+build.sh
+./build.sh
+./build.sh
+./build.sh
+./build.sh
+./build.sh
+/Users/k/bin/update.sh ; exit;
+cd ~/bin
+l
+nvim update.sh
+cd ~/Library/LaunchAgents
+l
+cat com.kt.update.plist
+cat com.user.update.plist
+/usr/bin/open -a ghostty 
+/usr/bin/open -a ghostty 
+/usr/bin/open -a ghostt
+/usr/bin/open -a ghostty
+/usr/bin/open -a ghostty /Users/k/bin/update.sh
+open --help
+~/bin/tmux-run-once.sh
+nvim ~/bin/tmux-run-once.sh
+defaults write com.apple.Safari UniversalSearchEnabled -bool false\
+defaults write com.apple.Safari SuppressSearchSuggestions -bool true
+sudo su -
+z icloud sync
+nvim sync.sh
+nvim ~/bin/update.sh 
+cd ~/Library/LaunchAgents
+l
+nvim com.user.update.plist
+/usr/bin/open -a ghostty /Users/k/bin/update.sh
+/usr/bin/open -a ghostty /Users/k/bin/update.sh
+/usr/bin/open -a ghostty /Users/k/bin/update-sync-dotfiles.sh
+nvim $_
+nvim ~/bin/update-sync-dotfiles.sh
+z reticle
+g pull
+g status
+g reset --hard origin/main
+open reticle.app
+pkill reticle.app
+nvim Sources/AppDelegate.swift
+nvim Sources/AppDelegate.swift
+./build.sh
+pkill reticle
+cat Sources/AppDelegate.swift
+cat Sources/AppDelegate.swift | pbcopy
+cat Sources/Configuration.swift | pbcopy
+cat Sources/CrosshairView.swift| pbcopy
+cat Sources/WindowFactory.swift
+cat Sources/WindowFactory.swift | pbcopy
+cat Sources/InputHandler.swift| pbcopy
+ls
+cat Sources/FileWatcher.swift| pbcopy
+cat Sources/Logger.swift| pbcopy
+nvim Sources/Logger.swift
+nvim Sources/InputHandler.swift
+nvim Sources/CrosshairView.swift
+./build.sh
+nvim Sources/AppDelegate.swift
+cat Sources/AppDelegate.swift | pbcopy
+cat Sources/CrosshairView.swift | pbcopy
+cat Sources/InputHandler.swift| pbcopy
+nvim Sources/InputHandler.swift
+nvim Sources/InputHandler.swift
+nvim Sources/Configuration.swift 
+nvim config.json
+nvim config.json
+nvim config.json
+nvim config.json
+g commit -a -m "update to fix multiple screens"
+g push
+nvim Sources/Configuration.swift 
+g diff Sources/CrosshairView.swift
+g pull
+g diff Sources/CrosshairView.swift
+g fetch
+g diff Sources/CrosshairView.swift
+g pull
+g restore Sources/CrosshairView.swift
+g pull
+pkill reticle
+open reticle.app
+open reticle.app
+z reticle
+open reticle.app
+pkill reticle.app
+pkill reticle
+pkill reticle.app
+open reticle.app
+pkill reticle
+open reticle.app
+pkill reticle
+open reticle.app
+pkill reticle
+open reticle.app
+pkill reticle
+open reticle.app
+pkill reticle
+cd reticle.app
+l
+cd Contents
+cd MacOS
+l
+./reticle
+pkill reticle
+./reticle
+./reticle
+./reticle
+cd ../../
+l
+cd ../
+l
+mv reticle.app reticle.app.bak
+./build.sh
+l
+cd reticle.app
+l
+cd contents/macos
+l
+./reticle
+cd ..\..\\
+l
+cd ../../
+l
+cd ../
+l
+rm reticle
+rm -rf reticle.app.bak
+rm -rf reticle.app
+l
+nvim build.sh
+./build.sh
+./build.sh
+cd ~/Library
+cd Application
+cd ../
+cd Application\ S
+cd Application\ Support
+cd reticle
+nvim config.json
+z reticle
+g pull
+g status
+where nvim
+nvim /Users/k/Library/CloudStorage/OneDrive-parkercorp/.ssh/config
+nvim /Users/k/Library/CloudStorage/OneDrive-parkercorp/.ssh/
+z reticle
+cd reticle.app
+l
+cd Contents
+l
+cd MacOS
+l
+./reticle
+./reticle
+./reticle
+./reticle
+./reticle
+./reticle
+l
+cd ../../
+l
+../
+l
+cd ../
+l
+cd reticle.app
+l
+cd contents maco
+cd contents/macos
+l
+./reticle
+./reticle
+ls
+l
+ls
+cd ..\ 
+cd ../
+l;
+cd macos
+l
+./reticle
+cd ../
+l
+cd macos
+./reticle
+cd ../
+cd macos
+l
+./reticle
+./reticle
+cd ../macos
+./reticle
+./reticle
+z reticle
+./build.sh
+./build.sh
+./build.sh
+pkill reticle
+./build.sh
+./build.sh
+./build.sh
+./build.sh | more
+./build.sh | more
+./build.sh | more
+./build.sh | more
+./build.sh | more
+./build.sh | more
+pkill reticle
+./build.sh
+./build.sh
+pkill reticle
+./build.sh
+pkill reticle
+./build.sh
+./build.sh
+pkill reticle
+pkill reticle
+./build.sh
+z reticle
+cd reticle.app
+cd Contents
+cd MacOS
+l
+./reticle
+cd ../macos
+./reticle
+l
+l
+cd ../macos
+./reticle
+./reticle
+cd ../macos
+pkill reticle
+./reticle
+cd ../macos
+./reticle
+cd ../macos
+./reticle
+./reticle
+./reticle
+cd ../macos
+./reticle
+cd ../macos
+./reticle
+./reticle
+./reticle
+./reticle
+cd ../macos
+./reticle
+cd ../macos
+./reticle
+cd ../macos
+./reticle
+gds
+gds
+/Users/k/bin/update.sh ; exit;
+/Users/k/bin/update.sh ; exit;
+nvim /etc/sudoers
+sudo nvim /etc/sudoers
+l
+cd /etc/sudoers.d
+l
+sudo nvim
+whoami /groups
+groups
+nvim admin
+cat ~/etc/sudoers
+sudo nvim /etc/sudoers.d/admin
+sudo vim
+z nvim plug
+l
+nvim snacks.lua
+exit
+l
+exit
+exit
+nvim plugin 
+z plugin
+l
+nvim snacks.lua
+nvim snacks.lua
+nvim snacks.lua
+nvim snacks.lua
+nvim snacks.lua
+nvim ~/bin/update.sh
+z nvim
+nvim --headless "+Lazy sync" +qa  # For LazyVim\
+
+g status
+g pull
+z plugin
+l
+rm markview.lua
+nvim "snacks.lua"
+nvim
+nvim snacks.lua
+nvim
+g commit -a -m "snacks"
+g push
+nvim 
+nvim
+g tatus
+g status
+g commit -a -m "snacks"
+g add .
+g commit -a -m "snacks"
+g push
+nvim
+/Users/k/bin/update.sh ; exit;
+ssh plex
+/Users/k/bin/update-sync-dotfiles.sh
+ssh plex
+ssh servarr
+ssh kqtran
+ssh k
+nvim ~/.ssh/config
+ssh k
+cat ~/.ssh/config
+nvim ~/.ssh/config
+ssh ansible_rt
+ssh servarr
+vim --clean --startuptime 
+vim --clean --startuptime test.log
+nvim test.log
+nvim --startuptime test.log
+nvim test.log
+ssh plex
+cat ~/.ssh/config
+cd ~/.ssh/
+ls -lah
+ssh-keygen -t ed25519
+ssh-keygen -t ed25519
+cat id_ed25519_k_kqtran.pub | pbcopy
+nvim ~/.ssh/config
+ssh k
+nvim ~/.ssh/config
+ssh k
+ssh plex
+ssh k
+z ghostty
+l
+nvim config
+g commit -a -m "sudo"
+g push
+g status
+pkill reticle
+infocmp -x | ssh k -- tic -x -
+ssh k
+nvim ~/.ssh/config
+ssh k
+sudo apt update
+sudo reboot
+/Users/k/bin/update.sh ; exit;
+~/bin/tmux-run-once.sh
+cd Downloads
+ls
+ls -lah
+ssh servarr
+ssh k
+ssh k
+ssh k
+~/bin/schedule-sync-dotfiles.sh
+z reticle
+nvim Sources/MenuBarIcon.swift
+./build.sh
+pkill reticle
+/Users/k/bin/update-sync-dotfiles.sh
+/Users/k/bin/update.sh ; exit;
+kjkkj
+~/bin/schedule-sync-dotfiles.sh
+ssh k
+z plugin
+l
+nvim snacks.lua
+z ftplugin
+z after
+z ftplugin
+l
+z 
+z fater
+z after
+g pull
+l
+l
+cd plugin
+l
+cd ../
+z
+ls
+l
+z nvim
+g pull
+brew install lazygit
+z tmux
+l
+nvim ~/.tmux.conf
+nvim ~/.tmux.conf
+nvim ~/.tmux.conf
+nvim ~/.tmux.conf
+z ghost
+l
+nvim config
+nvim config
+nvim config
+nvim config
+nvim config
+nvim config
+nvim config
+nvim config
+nvim config
+~/bin/schedule-sync-dotfiles.sh
+g status
+g status
+g status
+g status
+g status
+g status
+g status
+z nvim
+l
+cat
+nvim config
+~/bin/tmux-run-once.sh
+exit
+ls
+exit
+z nvim
+lazygit
+g status
+nvim
+~/bin/tmux-run-once.sh
+z ssh
+l
+nvim ~/.ssh/config
+ls
+z source
+g clone git@ssh.dev.azure.com:v3/BWFIT/BWF%20IT/SAP
+nvim ~/.ssh/config
+g clone git@ssh.dev.azure.com:v3/BWFIT/BWF%20IT/SAP
+l
+z SAP
+l
+nvim migration_steps.json
+z nvim plugin
+l
+nvim nvim-ufo.lua
+l
+nvim nvim-ufo.lua 
+lazygit
+nvim nvim-ufo.lua
+nvim nvim-ufo.lua
+nvim nvim-ufo.lua
+nvim nvim-ufo.lua
+nvim nvim-ufo.lua
+nvim nvim-ufo.lua
+nvim nvim-ufo.lua
+nvim promise-async.lua
+nvim nvim-ufo.lua
+nvim nvim-ufo.lua
+nvim nvim-ufo.lua
+nvim nvim-ufo.lua
+z set
+z nvim core
+nvim set.lua
+nvim set.lua
+lazygit
+l
+z nvim plugin
+l
+nvim nvim-ufo.lua
+nvim nvim-ufo.lua
+nvim nvim-ufo.lua
+nvim nvim-ufo.lua
+nvim nvim-ufo.lua
+nvim nvim-ufo.lua
+nvim nvim-ufo.lua
+lazygit
+z core
+l
+nvim init.lua
+nvim
+l
+g status
+g restore init.lua
+l
+nvim autocmds.lua
+cd ../
+l
+z after
+l
+cd plugin
+l
+nvim undotree.lua
+nvim telescope.lua
+cd ../
+l
+cd ../
+l
+cd lua
+l
+nvim core
+cd plugins
+l
+cd ../
+cd ../
+nvim init.lua
+l
+cd lua
+l
+cd core
+nvim init.lua
+nvim init.lua
+l
+cd ../
+ll
+cd ../
+l
+cd after
+l
+cd plugin
+l
+rm telescope.lua
+z core
+l
+nvim init.lua
+nvim init.lua
+cd ../
+l
+cd corel
+cd core
+l
+nvim lazy.lua
+nvim lazy.lua
+nvim lazy.lua
+l
+cd ../
+l
+cd plugins
+l
+nvim nvim-treesitter.lua
+mv nvim-treesitter.lua nvim-treesitter.lua.bak
+mv nvim-treesitter.lua.bak nvim-treesitter.lua
+rm gitsigns.lua.bak
+rm nvim-jqx.lua
+nvim transparent.lua
+nvim transparent.lua
+nvim transparent.lua
+nvim colorscheme.lua
+l
+nvim comment.lua
+nvim mini-surround.lua
+nvim mini-surround.lua
+nvim plenary.lua
+nvim plenary.lua
+l
+nvim ultimate-autopair.lua
+rm mini-surround.lua
+nvim obsidian.lua
+nvim obsidian.lua
+nvim obsidian.lua
+nvim obsidian.lua
+nvim obsidian.lua
+nvim ~/.zshrc
+source ~/.zshrc
+z nvim plugin
+ztop
+l
+nvim .
+nvim
+nvim
+z plugin
+nvim obsidian.lua
+nvim obsidian.lua
+nvim obsidian.lua
+nvim obsidian.lua
+g commit -a -m "remove obsdian"
+g push
+g status
+nvim which-key.lua
+l
+nvim colorscheme.lua
+nvim colorscheme.lua
+nvim colorscheme.lua
+nvim snacks.lua
+nvim snacks.lua
+nvim snacks.lua
+nvim snacks.lua
+nvim snacks.lua
+nvim snacks.lua
+nvim snacks.lua
+nvim snacks.lua
+nvim snacks.lua
+nvim snacks.lua
+nvim snacks.lua
+nvim snacks.lua
+nvim snacks.lua
+z nvim core
+l
+nvim utils
+nvim utils.lua
+nvim utils.lua
+nvim utils.lua
+nvim utils.lua
+nvim utils.lua
+nvim utils.lua
+g status
+g restore utils.lua
+nvim utils.lua
+nvim utils.lua
+g commit -a -m "add shortcut to reload config"
+z plugin
+l
+nvim vim-visual-multi.lua
+nvim snacks.lua
+nvim snacks.lua
+l
+cd lsp
+l
+cd ../
+l
+nvim nvim-blink.lua
+nvim nvim-blink.lua
+nvim nvim-blink.lua
+nvim copilot-cmp.lua
+nvim telescope.lua
+l
+g commit -a -m "blink"
+g push
+l
+l
+cd lsp
+l
+nvim lsp-zero.lua
+z core
+l
+nvim init.lua
+nvim lazy.lua
+nvim lazy.lua
+nvim lazy.lua
+nvim lazy.lua
+z plugins
+l
+cd lsp
+l
+nvim lsp-zero.lua
+cd ../
+l
+nvim nvim-treesitter
+nvim nvim-treesitter.lua
+nvim
+nvim
+\:wq
+g commit -a -m "removed lspzero"
+g push
+nvim --version
+brew update neovim
+brew upgrade neovim
+nvim
+brew install aerc
+aerc
+exit
+ssh plex
+/tmp/dsda-updater-macos.sh ; exit;

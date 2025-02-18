@@ -1,0 +1,1030 @@
+g config pull.rebase true
+g pull
+g status
+g diff .zshrc
+g status
+g commit -a -m "bw changes"
+g push
+g push origin HEAD:main
+g status
+g commit --amend
+g push
+g status
+g rebase --continue
+g push
+g status
+g fetch
+g status
+g pull
+g status
+g status
+nvim ~/.zshec
+nvim ~/.zshrc
+nvim ~/.zshrc
+g commit -a -m "remove profile cmds"
+g push
+tmux ls
+tmux attach
+tmux 
+tmux
+tmux
+tmux
+tmux
+tmux
+tmux
+tmux
+tmux ls
+tmux 
+tmux killall
+killall -9 tmux
+tmux
+tmux
+tmux
+time  zsh -i -c exit
+zsh
+tmux
+echo $TERM
+nvim ~/.tmux.conf
+echo $TERM
+tmux ls
+tmux --help
+tmux -k
+tmux -D 0
+tmux -d 0
+tmux -x 1
+tmux ls
+tmux attach
+tmux attach
+tmux ls
+tmux
+zsh
+z tmux
+g status 
+g commit -a -m "update catppuccin"
+g push
+g add .
+g status
+cd plugins/catppuccin/tmux\
+
+l
+cd ../
+l 
+ll
+g status
+g
+g show
+g status
+cd ~
+nvim ~/.tmux.conf
+wq
+nvim ~/.tmux.conf
+z tmux
+g commit -a -m "basic"
+g push
+z ghostty
+l
+g status
+g add .
+g commit -a -m "ghostty"
+g push
+rm -rf ~/.config/tmux
+rm ~/.tmux.conf
+rm ~/.tmux-darwin
+rm ~/.tmux
+l
+git clone --recurse-submodules git@github.com:kqtran-dev/tmux.git $HOME/.config/tmux
+stow -d $HOME/.config -t $HOME tmux
+tmux
+tmux ls
+killall -9 tmux
+tmux
+tmux
+cd ~/bin
+l
+z icloud
+l
+cd sync
+l
+ll
+l.
+l
+cd ~/.config/lsd
+cd ~/.config
+ls -lah
+l
+git clone --recurse-submodules git@github.com:kqtran-dev/lsd.git $HOME/.config/lsd
+l
+l
+cd lsd
+g pull
+l
+/Users/k/bin/update-sync.dotfiles.sh
+\:q!
+/Users/k/bin/update-sync.dotfiles.sh
+ln -s ~/icloud/sync/bin/update-sync-dotfiles.sh ~/bin/update-sync-dotfiles.sh\
+ln -s ~/icloud/sync/bin/schedule-sync-dotfiles.sh ~/bin/schedule-sync-dotfiles.sh\
+
+/Users/k/bin/update-sync.dotfiles.sh
+\:q!
+exit
+tmux ls
+z icloud sync
+l
+cd bin
+l
+cd ../
+nvim sync.sh
+nvim sync.sh
+~/bin/schedule_sync-dotfiles.sh
+tmux ls
+tmux a -t sync
+z ~/.config
+l
+rm -rf tmux
+rm ~/.tmux.conf
+rm ~/tmux-256color.info 
+git clone --recurse-submodules git@github.com:kqtran-dev/tmux.git $HOME/.config/tmux
+stow -d $HOME/.config -t $HOME tmux
+tmux
+tmux ls
+~/bin/schedule-sync-dotfiles.sh
+tmux a -t sync
+z icloud sync bin
+nvim schedule-sync-dotfiles.sh
+~/bin/schedule-sync-dotfiles.sh
+tmux a -t sync
+tmux ls
+tmux a -t 0
+ln -s "~/icloud/sync/bin/update-sync-dotfiles.sh" "~/bin/update-sync-dotfiles.sh"\
+ln -s "~/icloud/sync/bin/schedule_sync-dotfiles.sh" "~/bin/update-sync-dotfiles.sh"\
+
+ln -s --help
+ln -s "~/bin/update-sync-dotfiles.sh" "~/icloud/sync/bin/update-sync-dotfiles.sh" \
+ln -s "~/bin/update-sync-dotfiles.sh" "~/icloud/sync/bin/schedule_sync-dotfiles.sh" \
+
+~/icloud/sync/bin/update-sync-dotfiles.sh
+~/icloud/sync/bin/schedule_sync-dotfiles.sh
+tmux ls
+tmux a -t sync
+ln -s ~/icloud/sync/bin/update-sync-dotfiles.sh ~/bin/update-sync-dotfiles.sh\
+
+ln -s ~/icloud/sync/bin/schedule_sync-dotfiles.sh ~/bin/update-sync-dotfiles.sh\
+
+cd ~/bin/
+l
+ln -s ~/icloud/sync/bin/schedule_sync-dotfiles.sh ~/bin/schedule_sync-dotfiles.sh\
+
+z nvim
+g status
+g diff
+g pull
+g rebase
+g push
+g status
+g commit -a
+g push
+g status
+g push origin HEAD:main
+g push
+g status
+g fetch
+g pull
+g commit --amend
+g push
+g status
+g rebase --continue
+g push
+g status
+g fetch
+g pull
+g push
+g status
+z icloud sync
+z bin
+ol
+l
+nvim update-sync-dotfiles.sh
+mv schedule_sync-dotfiles.sh schedule-sync-dotfiles.sh
+cd ../
+l
+nvim sync.sh
+z icloud sync
+nvim sync.sh
+~/bin/schedule-sync-dotfiles.sh
+z ghostty
+l
+nvim config
+tmux ls
+tmux a
+tmux ls
+tmux a -t de
+tmux ls
+tmux a -t d
+CURRENT_PROFILE=$(find "$FIREFOX_PROFILES_DIR" -type d -name "*.*" -exec stat -f "%m %N" {} + | sort -rn | head -1 | cut -d' ' -f2)\
+
+# Define the base directory for Firefox profiles\
+FIREFOX_PROFILES_DIR="$HOME/Library/Application Support/Firefox/Profiles"\
+\
+# Define the source userChrome.css file\
+SOURCE_FILE="$HOME/icloud/sync/firefox/chrome/userChrome.css"\
+\
+# Check if the source file exists\
+if [ ! -f "$SOURCE_FILE" ]; then\
+    echo "Error: Source file '$SOURCE_FILE' not found."\
+    exit 1\
+fi\
+\
+
+echo $FIREFOX_PROFILES_DIR
+CURRENT_PROFILE=$(find "$FIREFOX_PROFILES_DIR" -type d -name "*.*" -exec stat -f "%m %N" {} + | sort -rn | head -1 | cut -d' ' -f2)\
+
+echo $CURRENT_PROFILE
+CURRENT_PROFILE=$(find "$FIREFOX_PROFILES_DIR" -type d -name "*.*" -exec stat -f "%m %N" {} + | sort -rn | head -1 | cut -d' ' -f2)\
+
+echo $CURRENT_PROFILE
+z icloud sync 
+l
+./firefox.sh
+z karabiner
+l
+cd ../karabiner.bak
+l
+cat karabiner.json
+cat karabiner.json | more
+/Users/k/bin/update.sh ; exit;
+cd ~/reticle_logs
+l
+tail -f app.log
+z icloud sync
+l
+cd .bin
+l
+cd bin
+l
+cd ../
+nvim sync.sh
+l
+ll
+mkdir -p Library/LaunchAgents/
+cp ~/Library/LaunchAgents/com.user.update.plist Library/LaunchAgents/com.kt.update.plist
+nvim $_
+ln -s ~/icloud/sync/Library/LaunchAgents/com.kt.update.plist ~/Library/LaunchAgents/com.kt.update.plist
+nvim sync.sh
+launchctl load com.kt.update.plist
+chmod +x Library/LaunchAgents/com.kt.update.plist
+launchctl load ~/Library/LaunchAgents/com.kt.update.plist
+launchctl unload ~/Library/LaunchAgents/com.kt.update.plist
+launchctl load ~/Library/LaunchAgents/com.kt.update.plist
+launchctl --help
+launchctl start ~/Library/LaunchAgents/com.kt.update.plist
+z reticle
+l
+g branch main
+g branch -d main
+g fetch
+g fetch origin
+git checkout -b main origin/main
+g status
+g pull
+g diff Sources/AppDelegate.swift
+g status
+g restore Sources/AppDelegate.swift
+g restore Sources/Logger.swift
+g fetch
+./build.sh
+open reticle.app
+g reset --hard origin/main
+g pull
+./build.sh
+pkill reticle
+open reticle.app
+pkill reticle
+./reticle
+open reticle.app
+nvim app_config.json 
+nvim Sources/AppDelegate.swift
+./build.sh
+pkill reticle
+open reticle.app
+cd ~/Library/Application\ Support/reticle
+l
+g reset --hard origin/main
+l
+z reticle
+g reset --hard origin/main
+g fetch
+g reset --hard origin/main
+cd ~/reticle_logs
+l
+ll
+ll
+l
+;l
+l
+l
+l
+l
+/Users/k/source/reticle/reticle ; exit;
+/Users/k/source/reticle/reticle ; exit;
+/Users/k/source/reticle/reticle ; exit;
+z reticle
+pkill reticle
+./build.sh
+open reticle.app
+pkill reticle
+pkill reticle
+./build.sh
+./build.sh
+open reticle.app
+./build.sh
+pkill reticle
+open reticle.app
+pkill reticle
+./build.sh
+open reticle.app
+pkill reticle
+./build.sh
+open reticle.app
+pkill reticle
+./build.sh
+pkill reticle
+open reticle.app
+pkill reticle
+open reticle.app
+pkill reticle
+open reticle.app
+pkill reticle
+open reticle.app
+pkill reticle
+./build.sh
+./build.sh
+./build.sh
+./build.sh
+./build.sh
+./build.sh
+pkill reticle
+open reticle.app
+pkill reticle
+./build.sh
+open reticle
+open reticle.app
+./build.sh
+pkill reticle
+open reticle.app
+./build.sh
+pkill reticle
+open reticle
+./build.sh
+open reticle
+open reticle.app
+pkill reticle
+pkill reticle
+pkill reticle
+pkill reticle
+pkill reticle
+./build.sh
+open reticle.app
+pkill reticle
+./build.sh
+open reticle.app
+pkill reticle
+./build.sh
+open reticle.app
+pkill reticle
+gds
+cd ~/Library/Application\ Support/reticle
+l
+tail -f app.log
+tail -f app.log
+nvim config.json
+tail -f app.log
+cd ~/Library/LaunchAgents
+l
+ll
+nvim com.user.update.plist
+rm com.lwouis.alt-tab-macos.plist
+nvim com.user.update.plist
+l
+l ~/bin
+z reticle
+nvim Sources/AppDelegate.swift
+open -w reticle.app
+open -W reticle.app
+pkill reticle
+./build.sh
+open -f reticle
+open -f reticle.app
+pkill reticle.app
+g fetch
+./build.sh
+open reticle.app
+pkill reticle.app
+nvim app_config.json
+pkill reticle.app
+open reticle.app
+g status
+nvim Sources/AppDelegate.swift
+./build.sh
+pkill reticle.app
+./build.sh
+open reticle.app
+nvim Sources/AppDelegate.swift
+nvim ./build.sh
+./build.sh
+nvim Sources/AppDelegate.swift
+./build.sh
+nvim Sources/AppDelegate.swift
+nvim Sources/AppDelegate.swift
+./build.sh
+nvim Sources/AppDelegate.swift
+./build.sh
+nvim Sources/AppDelegate.swift
+./build.sh
+pkill reticle
+open reticle.app
+nvim Sources/AppDelegate.swift
+/Users/k/bin/update-sync-dotfiles.sh
+/Users/k/bin/update.sh ; exit;
+/Users/k/bin/update.sh ; exit;
+/Users/k/bin/update.sh ; exit;
+the quick brown fox jumped over the lazy dogs 
+~/bin/schedule-sync-dotfiles.sh
+tmux ls 
+tmux -a -t sync
+tmux -a sync
+cat ~/.ssh/config
+\:q!
+nvim
+z obsidian
+l
+nvim .obsidian.vimrc
+nvim .obsidian
+nvim .obsidian.vimrc
+ssh servarr
+ssh plex
+ssh plex-srv
+nvim ~/.ssh/config
+ssh plex
+exit
+z icloud sync
+l
+nvim sync.sh
+defaults write org.hammerspoon.Hammerspoon MJConfigFile "~/.config/hammerspoon/init.lua
+defaults write org.hammerspoon.Hammerspoon MJConfigFile "~/.config/hammerspoon/init.lua"
+z hammer
+z spoon
+l
+nvim Crosshair.lua
+cd ../
+l
+nvim init.lua
+z spoons
+l
+nvim Crosshair.lua
+rm Crosshair.lua
+z hammer
+l
+nvim init.lua
+g commit -a -m "tabsearcH"
+g push
+ssh nas03.tail153d7.ts.net
+gds
+z nvim
+l
+g status
+~/bin/schedule-sync-dotfiles.sh
+g stsatus
+g status
+l
+z lua
+l
+cd core
+l
+nvim set.lua
+g commit -a -m "add clipboard"
+g push
+nvim
+z core
+l
+nvim set.lua
+nvim
+nvim set.lua
+nvim set.lua
+nvim set.lua
+nvim set.lua
+nvim set.lua
+nvim set.lua
+nvim set.lua
+nvim set.lua
+nvim set.lua
+nvim set.lua
+nvim set.lua
+nvim set.lua
+nvim set.lua
+nvim set.lua
+brew install scroll-reverser
+~/bin/schedule-sync-dotfiles.sh
+g status
+ssh servarr
+~/bin/schedule-sync-dotfiles.sh
+ssh servarr
+/Users/k/bin/update-sync-dotfiles.sh
+z reticle
+open reticle.app
+pkill reticle
+z
+nvim
+brew install skim
+nvim
+~/bin/schedule-sync-dotfiles.sh
+/Users/k/bin/update-sync-dotfiles.sh
+/Users/k/bin/update-sync-dotfiles.sh
+/Users/k/bin/update-sync-dotfiles.sh
+/Users/k/bin/update-sync-dotfiles.sh
+nvim ~/.hammerspoon/Spoons/TabSearch.lua
+nvim ~/.hammerspoon/init.lua
+nvim ~/.hammerspoon/init.lua
+z config
+l
+git remote add origin git@github.com:kqtran-dev/hammerspoon.git\
+git branch -M main\
+git push -u origin main
+g clone git@github.com:kqtran-dev/hammerspoon.git
+cd hammerspoon
+l
+g status
+g status
+g add .
+g status
+cp ~/.hammerspoon/ ./ -rv
+cp -rv ~/.hammerspoon/ ./
+ls
+g commit -a -m "initial commit"
+g add .
+g commit -a -m "initial commit"
+rm -rf ~/.hammerspoon
+l
+cd spoons
+l
+nvim TabSearch.lua
+cd ../
+l
+nvim init.lua
+z nvim 
+z set
+l
+z nvim
+l
+cd lua
+l
+cd lua
+cd core
+l
+nvim set.lua
+nvim remap.lua
+cd ../
+l
+z plujgins
+z plugins
+l
+nvim telescope.lua
+z core
+nvim remap.lua
+g commit -a -m "telescope bindings"
+g push
+z hammerspoon
+l
+nvim
+z core
+nvim remap.lua
+nvim remap.lua
+nvim remap.lua
+nvim remap.lua
+z plugins
+l
+nvim telescope.lua
+nvim telescope.lua
+nvim telescope.lua
+nvim telescope.lua
+nvim telescope.lua
+g commit -a -m "telescope"
+g push
+z hammerspoon
+l
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+z spoons
+l
+nvim Tasb
+nvim TabSearch.lua 
+nvim TabSearch.lua
+g commit -a -m "hammerspoon"
+g push
+ifconfig
+l
+ifconfig | more
+ping 1.1.1.1
+ifconfig 
+ifconfig  | more
+ping 192.168.1.109
+ping 192.168.1.1
+ping 1.1.1.1
+ping 192.168.1.1 -t
+ping 192.168.1.1 
+ping 1.1.1.1 -t
+ping 1.1.1.1 
+ping 1.1.1.1
+gds
+brew update obsidian
+brew upgrade obsidian
+/Users/k/bin/update.sh ; exit;
+ ping 1.1.1.1
+defaults get
+defaults get com.apple.Firefox
+defaults get com
+defaults list
+defaults
+mas install alfred
+brew install alfred
+/Applications/ghostty.app
+open /Applications/Ghostty.app
+z obsidian
+l
+nvim .obsidian
+nvim .obsidian.vimrc
+z reticle
+build.sh
+./build.sh
+./build.sh
+./build.sh
+./build.sh
+./build.sh
+/Users/k/bin/update.sh ; exit;
+cd ~/bin
+l
+nvim update.sh
+cd ~/Library/LaunchAgents
+l
+cat com.kt.update.plist
+cat com.user.update.plist
+/usr/bin/open -a ghostty 
+/usr/bin/open -a ghostty 
+/usr/bin/open -a ghostt
+/usr/bin/open -a ghostty
+/usr/bin/open -a ghostty /Users/k/bin/update.sh
+open --help
+~/bin/tmux-run-once.sh
+nvim ~/bin/tmux-run-once.sh
+defaults write com.apple.Safari UniversalSearchEnabled -bool false\
+defaults write com.apple.Safari SuppressSearchSuggestions -bool true
+sudo su -
+z icloud sync
+nvim sync.sh
+nvim ~/bin/update.sh 
+cd ~/Library/LaunchAgents
+l
+nvim com.user.update.plist
+/usr/bin/open -a ghostty /Users/k/bin/update.sh
+/usr/bin/open -a ghostty /Users/k/bin/update.sh
+/usr/bin/open -a ghostty /Users/k/bin/update-sync-dotfiles.sh
+nvim $_
+nvim ~/bin/update-sync-dotfiles.sh
+z reticle
+g pull
+g status
+g reset --hard origin/main
+open reticle.app
+pkill reticle.app
+nvim Sources/AppDelegate.swift
+nvim Sources/AppDelegate.swift
+./build.sh
+pkill reticle
+cat Sources/AppDelegate.swift
+cat Sources/AppDelegate.swift | pbcopy
+cat Sources/Configuration.swift | pbcopy
+cat Sources/CrosshairView.swift| pbcopy
+cat Sources/WindowFactory.swift
+cat Sources/WindowFactory.swift | pbcopy
+cat Sources/InputHandler.swift| pbcopy
+ls
+cat Sources/FileWatcher.swift| pbcopy
+cat Sources/Logger.swift| pbcopy
+nvim Sources/Logger.swift
+nvim Sources/InputHandler.swift
+nvim Sources/CrosshairView.swift
+./build.sh
+nvim Sources/AppDelegate.swift
+cat Sources/AppDelegate.swift | pbcopy
+cat Sources/CrosshairView.swift | pbcopy
+cat Sources/InputHandler.swift| pbcopy
+nvim Sources/InputHandler.swift
+nvim Sources/InputHandler.swift
+nvim Sources/Configuration.swift 
+nvim config.json
+nvim config.json
+nvim config.json
+nvim config.json
+g commit -a -m "update to fix multiple screens"
+g push
+nvim Sources/Configuration.swift 
+g diff Sources/CrosshairView.swift
+g pull
+g diff Sources/CrosshairView.swift
+g fetch
+g diff Sources/CrosshairView.swift
+g pull
+g restore Sources/CrosshairView.swift
+g pull
+pkill reticle
+open reticle.app
+open reticle.app
+z reticle
+open reticle.app
+pkill reticle.app
+pkill reticle
+pkill reticle.app
+open reticle.app
+pkill reticle
+open reticle.app
+pkill reticle
+open reticle.app
+pkill reticle
+open reticle.app
+pkill reticle
+open reticle.app
+pkill reticle
+cd reticle.app
+l
+cd Contents
+cd MacOS
+l
+./reticle
+pkill reticle
+./reticle
+./reticle
+./reticle
+cd ../../
+l
+cd ../
+l
+mv reticle.app reticle.app.bak
+./build.sh
+l
+cd reticle.app
+l
+cd contents/macos
+l
+./reticle
+cd ..\..\\
+l
+cd ../../
+l
+cd ../
+l
+rm reticle
+rm -rf reticle.app.bak
+rm -rf reticle.app
+l
+nvim build.sh
+./build.sh
+./build.sh
+cd ~/Library
+cd Application
+cd ../
+cd Application\ S
+cd Application\ Support
+cd reticle
+nvim config.json
+z reticle
+g pull
+g status
+where nvim
+nvim /Users/k/Library/CloudStorage/OneDrive-parkercorp/.ssh/config
+nvim /Users/k/Library/CloudStorage/OneDrive-parkercorp/.ssh/
+z reticle
+cd reticle.app
+l
+cd Contents
+l
+cd MacOS
+l
+./reticle
+./reticle
+./reticle
+./reticle
+./reticle
+./reticle
+l
+cd ../../
+l
+../
+l
+cd ../
+l
+cd reticle.app
+l
+cd contents maco
+cd contents/macos
+l
+./reticle
+./reticle
+ls
+l
+ls
+cd ..\ 
+cd ../
+l;
+cd macos
+l
+./reticle
+cd ../
+l
+cd macos
+./reticle
+cd ../
+cd macos
+l
+./reticle
+./reticle
+cd ../macos
+./reticle
+./reticle
+z reticle
+./build.sh
+./build.sh
+./build.sh
+pkill reticle
+./build.sh
+./build.sh
+./build.sh
+./build.sh | more
+./build.sh | more
+./build.sh | more
+./build.sh | more
+./build.sh | more
+./build.sh | more
+pkill reticle
+./build.sh
+./build.sh
+pkill reticle
+./build.sh
+pkill reticle
+./build.sh
+./build.sh
+pkill reticle
+pkill reticle
+./build.sh
+z reticle
+cd reticle.app
+cd Contents
+cd MacOS
+l
+./reticle
+cd ../macos
+./reticle
+l
+l
+cd ../macos
+./reticle
+./reticle
+cd ../macos
+pkill reticle
+./reticle
+cd ../macos
+./reticle
+cd ../macos
+./reticle
+./reticle
+./reticle
+cd ../macos
+./reticle
+cd ../macos
+./reticle
+./reticle
+./reticle
+./reticle
+cd ../macos
+./reticle
+cd ../macos
+./reticle
+cd ../macos
+./reticle
+gds
+gds
+/Users/k/bin/update.sh ; exit;
+/Users/k/bin/update.sh ; exit;
+nvim /etc/sudoers
+sudo nvim /etc/sudoers
+l
+cd /etc/sudoers.d
+l
+sudo nvim
+whoami /groups
+groups
+nvim admin
+cat ~/etc/sudoers
+sudo nvim /etc/sudoers.d/admin
+sudo vim
+z nvim plug
+l
+nvim snacks.lua
+exit
+l
+exit
+exit
+nvim plugin 
+z plugin
+l
+nvim snacks.lua
+nvim snacks.lua
+nvim snacks.lua
+nvim snacks.lua
+nvim snacks.lua
+nvim ~/bin/update.sh
+z nvim
+nvim --headless "+Lazy sync" +qa  # For LazyVim\
+
+g status
+g pull
+z plugin
+l
+rm markview.lua
+nvim "snacks.lua"
+nvim
+nvim snacks.lua
+nvim
+g commit -a -m "snacks"
+g push
+nvim 
+nvim
+g tatus
+g status
+g commit -a -m "snacks"
+g add .
+g commit -a -m "snacks"
+g push
+nvim
+/Users/k/bin/update.sh ; exit;
+ssh plex
+/Users/k/bin/update-sync-dotfiles.sh
+ssh plex
+ssh servarr
+ssh kqtran
+ssh k
+nvim ~/.ssh/config
+ssh k
+cat ~/.ssh/config
+nvim ~/.ssh/config
+ssh ansible_rt
+ssh servarr
+vim --clean --startuptime 
+vim --clean --startuptime test.log
+nvim test.log
+nvim --startuptime test.log
+nvim test.log
+ssh plex
+cat ~/.ssh/config
+cd ~/.ssh/
+ls -lah
+ssh-keygen -t ed25519
+ssh-keygen -t ed25519
+cat id_ed25519_k_kqtran.pub | pbcopy
+nvim ~/.ssh/config
+ssh k
+nvim ~/.ssh/config
+ssh k
+ssh plex
+ssh k
+z ghostty
+l
+nvim config
+g commit -a -m "sudo"
+g push
+g status
+pkill reticle
+infocmp -x | ssh k -- tic -x -
+ssh k
+nvim ~/.ssh/config
+ssh k
+sudo apt update
+sudo reboot
+/Users/k/bin/update.sh ; exit;
+~/bin/tmux-run-once.sh
+cd Downloads
+ls
+ls -lah
+ssh servarr
+ssh k
+ssh k
+ssh k
+~/bin/schedule-sync-dotfiles.sh
+z reticle
+nvim Sources/MenuBarIcon.swift
+./build.sh
+pkill reticle
+/Users/k/bin/update-sync-dotfiles.sh
+/Users/k/bin/update.sh ; exit;
