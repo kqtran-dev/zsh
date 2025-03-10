@@ -52,6 +52,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     # macOS: Use pbcopy and pbpaste for clipboard
     alias copy="pbcopy"
     alias paste="pbpaste"
+    source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
     # Linux: Use xclip for clipboard
     alias copy="xclip -selection clipboard"
