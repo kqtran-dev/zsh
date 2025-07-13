@@ -83,3 +83,4 @@ PATH="/Library/Frameworks/Python.framework/Versions/3.12/bin:${PATH}"
 PATH="/c/Windows/System32/:${PATH}"
 PATH="/c/Windows/System32/WindowsPowerShell/v1.0:${PATH}"
 export PATH
+eval "$(/opt/homebrew/bin/brew shellenv)"
