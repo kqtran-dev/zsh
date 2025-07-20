@@ -42,6 +42,7 @@ if [[ $os == "macos" ]]; then
         "$HOME/Library/Python/3.9"
         "/opt/homebrew/bin"
         "/opt/homebrew/opt/coreutils/libexec/gnubin"
+        "$HOME/bin"
     )
 elif [[ $os == "wsl" ]]; then
     paths+=(
