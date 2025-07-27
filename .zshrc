@@ -211,3 +211,7 @@ export NODE_OPTIONS="--no-deprecation"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # zprof
+if [[ "$TERM_PROGRAM" == "ghostty" ]]; then
+    export TERM=xterm-256color
+fi
+
