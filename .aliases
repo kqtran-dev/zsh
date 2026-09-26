@@ -7,6 +7,7 @@ if [[ "$OSTYPE" == darwin* ]]; then
         alias ll='ls -l --color=always'
         alias l.='ls .* --color=always'
         alias lt='/opt/homebrew/bin/lsd --tree'
+        alias clip=/usr/bin/pbcopy
     else 
         alias l='ls --color -h --group-directories-first -F'
         alias ll='ls --color=auto -l --all --classify=auto --group-directories-first --time-style="+%Y-%m-%d    %H:%M" --no-group -og'
@@ -100,3 +101,5 @@ function y() {
 }
 
 alias gds='python3 ~/bin/ss.py'
+alias sbrld='brew services reload sketchybar'
+

@@ -218,3 +218,4 @@ fi
 function ff() {
     ~/.config/aerospace/windowswitcher.sh
 }
+eval "$(alias sketchybar="$HOME/.config/sketchybar/set-bar-mode.sh")"
